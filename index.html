@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Menino perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Você acorda, seu nome é Nicho, está perdido em uma floresta bem esquisita e medonha. Ele estava com medo, pois estava escurecendo, mas decidiu seguir uma trilha para procurar um local para se abrigar. Assim, se deparou com uma placa, em que do lado esquerdo, mostrava o caminho para uma casa próxima, e pelo lado direito não era possível entender aonde ela levaria. </p>
+            <button class="btn-proximo" data-proximo="1">Lado Esquerdo</button>
+            <button class="btn-proximo" data-proximo="2">Lado Direito</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/Casa-assombrada.png" alt="">
+            <p>Você decide seguir pelo lado esquerdo da floresta. Em poucos minutos, você se depara com uma casa toda fechada, ou melhor abandonada!</p>
+            <button class="btn-proximo" data-proximo="3">Entrar na casa</button>
+            <button class="btn-proximo" data-proximo="4">Não entrar na casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/Caminho-sem-fim.png" alt="">
+            <p>Você decide seguir pelo lado direito. Estranhamente você sente um desconforto, a floresta começa a se fechar mais e tudo fica um pouco mais escuro.</p>
+            <button class="btn-proximo" data-proximo="8">Continuar seguindo em frente</button>
+            <button class="btn-proximo" data-proximo="9">Se cagar todo</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="img/Casa-por-dentro.png" alt="">
+            <p>Você entrou na casa! Está tudo tão empoeirado, quebrado, como se a casa fosse cair em minha cabeça!!</p>
+            <button class="btn-proximo" data-proximo="5">Investigar casa</button>
+        </div>
+       <div class="passo" id="passo-5">
+            <img src="img/cama.png" alt="">
+            <p>Um quarto! Você acaba se sentindo muito cansado e fraco. Deseja dormir na cama?</p>
+            <button class="btn-proximo" data-proximo="6">Dormir</button>
+            <button class="btn-proximo" data-proximo="7">Ficar acordado</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="img/Dormindo.png" alt="">
+            <p>Você acaba dormindo naquela cama! Então acaba sonhando de algo que você acaba não entendendo muito, mas se sente desconfortavel quando derrepente... </p>
+            <button class="btn-proximo" data-proximo="0">?</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="img/Desmaio-quarto.png" alt="">
+            <p>Você decide não dormir! Por algum motivo, você se sente observado e seu corpo começa a agir estranho. Você acaba desmaiando!!</p>
+            <button class="btn-proximo" data-proximo="0">Nossa! ACORDA!</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/escuro.png" alt="">
+            <p>Você dá meia volta, mas percebe que está escurecendo mais e mais! O frio te deixa todo arrepiado. Então vc decide entrar na casa.</p>
+            <button class="btn-proximo" data-proximo="3">Entrar na casa</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="img/Bem-escuro.png" alt="">
+            <p>A floresta ficou tão escuro que você mal conseguia ver algo. Assim, fazendo o tropeçar em algo e desmaiar.</p>
+            <button class="btn-proximo" data-proximo="0">Acordar!</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="img/escuro.png" alt="">
+            <p>Você acabou se cagando todo! Mal conseguia aguentar essa pressão toda. Nem sabia se ia conseguir voltar para casa!! Então decidiu voltar para trás para ver a casa.</p>
+            <button class="btn-proximo" data-proximo="10">Olhar para trás</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="img/Bixo-ruim.png" alt="">
+            <p>???- Você estará preso nesse loop infern@l para sempre... E então você desmaia.</p>
+            <button class="btn-proximo" data-proximo="0">NÃOOOOO! Acordar!</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
